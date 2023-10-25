@@ -79,5 +79,5 @@
     "github": "https://github.com/GleapSDK",
     "linkedin": "https://www.linkedin.com/company/gleap"
   },
-  "openapi": "https://415f-91-114-98-248.ngrok-free.app/api-docs.json"
+  "openapi": "https://api.gleap.io/api-docs.json"
 }

@@ -31,13 +31,25 @@ To obtain an API token, follow these steps:
 
 1. **Registration**: Sign up for an account on our platform.
 
-2. **Authentication**: Log in to your account.
+2. **Token Generation**: Generate an API token using the API.
 
-3. **Token Generation**: Generate an API token from your account settings.
+```javascript
+const url = 'https://api.gleap.io/auth';
+const username = 'your_username_here';
+const password = 'your_password_here';
 
-4. **Usage**: Use the generated token in the `Authorization` header of your API requests.
+const headers = new Headers();
+headers.append('Authorization', 'Basic ' + btoa(username + ':' + password));
 
-## Example
+fetch(url, {
+  headers: headers
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+```
+
+3. **Usage**: Use the generated token in the `Authorization` header of your API requests.
 
 ```http
 GET /api/resource
