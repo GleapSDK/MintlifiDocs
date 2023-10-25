@@ -1,33 +1,50 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: "Introduction"
+description: "This section contains API endpoint examples for integrating our service into your applications and workflows."
 ---
 
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+  We have recently started working on our new documentation and are in the
+  process of adding content. As of now, there may not be much information
+  available, but we are working hard to provide you with the most comprehensive
+  documentation possible. Thank you for your patience and understanding.
 </Note>
 
 ## Welcome
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+We are continuously improving our documentation and adding new content every day. We are committed to providing you with the most up-to-date and accurate information. Thank you for your patience and understanding as we work to make our documentation as helpful as possible.
+If you are missing some functionality, don't hesitate to contact us on gleap.io or by email to hello@gleap.io
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
+# Authentication
 
-## Authentication
+The API uses token-based authentication to secure access. To authenticate requests, you must include an API key or token in the request header.
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+## Authentication Headers
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
+Include the following headers in your requests:
+
+- `Authorization`: This header should contain the API token in the format `Bearer <token>`.
+
+## Obtaining an API Token
+
+To obtain an API token, follow these steps:
+
+1. **Registration**: Sign up for an account on our platform.
+
+2. **Authentication**: Log in to your account.
+
+3. **Token Generation**: Generate an API token from your account settings.
+
+4. **Usage**: Use the generated token in the `Authorization` header of your API requests.
+
+## Example
+
+```http
+GET /api/resource
+Host: api.gleap.io
+Authorization: Bearer your_api_token_here
 ```
+
+## Project related resources
+
+Some resources require a specific header in order to access them. The `project` header should contain the project ID. 
