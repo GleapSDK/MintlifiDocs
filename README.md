@@ -1,4 +1,10 @@
-# Mintlify Starter Kit
+# Gleap API Documentation
+
+This repository contains an earlier Mintlify documentation setup for Gleap. For the current SDK guides and API reference, use [docs.gleap.ai](https://docs.gleap.ai/introduction).
+
+[Gleap](https://www.gleap.ai) provides AI-native customer support and feedback workflows for software teams.
+
+## Template background
 
 Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
 
